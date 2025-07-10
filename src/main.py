@@ -33,6 +33,20 @@ def br():
 def script(filelocscript):
     fortext = f"<script src='{filelocscript}'></script>"
     app(fileloc, fortext, False)
+def js(script):
+    fortext = f"""
+<script>
+{script}
+</script>
+    """
+    app(fileloc, fortext, False)
+def css(css):
+    fortext = f"""
+<style>
+{css}
+</style>
+    """
+    app(fileloc, fortext, False)
 
 # INIT
 def init(fileloc):
