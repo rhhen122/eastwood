@@ -30,6 +30,9 @@ def img(src, height, width, _id, cl, ot):
     app(fileloc, fortext, False)
 def br():
     app(fileloc, '<br>', False)
+def script(filelocscript):
+    fortext = f"<script src='{filelocscript}'></script>"
+    app(fileloc, fortext, False)
 
 # INIT
 def init(fileloc):
