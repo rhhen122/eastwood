@@ -14,6 +14,7 @@ def header(text, _id, cl, wh):
     """
     app(fileloc, fortext, False)
 def text(text):
+    fortext = f"<p>{text}>/p>"
     app(fileloc, text, False)
 
 def init(fileloc):
