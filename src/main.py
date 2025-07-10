@@ -1,4 +1,5 @@
 # COPYRIGHT: Roky Henderson / Rhhen
+
 from init import *
 
 # Append function defenition
