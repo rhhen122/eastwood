@@ -10,9 +10,9 @@ def app(fileloc, content, writefirst):
         file.write(f"{content}\n")
 
 # Tags
-def header(text, _id, cl, wh):
+def header(text, _id, cl, ot, wh):
     fortext = f"""
-<h{wh} id='{_id}' class='{cl}'>
+<h{wh} id='{_id}' class='{cl}' {ot}>
     {text}
 </h{wh}>
     """
@@ -23,6 +23,13 @@ def text(text):
 def style(filelocstyle):
     fortext = f"<link rel=stylesheet href={filelocstyle}>"
     app(fileloc, fortext, False)
+def raw(text):
+    app(fileloc, text, False)
+def img(src, height, width, _id, cl, ot):
+    fortext = f"<img src='{src}' height='{height}' width='{width}' id='{_id}' class='{cl}' {ot}>"
+    app(fileloc, fortext, False)
+def br():
+    app(fileloc, '<br>', False)
 
 # INIT
 def init(fileloc):
