@@ -57,6 +57,11 @@ def title(title):
 def metadata(metadata):
     fortext = f"<meta name='description' content='{metadata}'>"
     app(fileloc, fortext, False)
+def ulist(_id, cl, ot):
+    fortext = f"<ul id='{_id}' class='{cl}' {ot}>"
+    app(fileloc, fortext, False)
+def ulistclose():
+    app(fileloc, "</ul>", False)
 
 # INIT
 def init(fileloc):
