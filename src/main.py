@@ -71,6 +71,8 @@ def button(text, _id, cl, ot):
 def link(text, href, _id, cl, ot):
     fortext = f"<a href='{href}' id='{_id}' class='{cl}' {ot}>{text}</a>"
     app(fileloc, fortext, False)
+def hr():
+    app(fileloc, '<hr>', False)
 
 # INIT
 def init(fileloc):
