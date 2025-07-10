@@ -20,3 +20,14 @@ text('A text element has wildly appered!')
 
 end(fileloc)
 ```
+Then compile and run with
+```bash
+./build.sh
+```
+
+## Install
+Just git clone the repo from the latest commit.
+smthing like this:
+```bash
+git clone --depth=1 https://github.com/rhhen122/eastwood.git
+```
