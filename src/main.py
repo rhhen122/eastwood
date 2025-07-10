@@ -54,6 +54,9 @@ def favicon(filelocfavicon):
 def title(title):
     fortext = f"<title>{title}</title>"
     app(fileloc, fortext, False)
+def metadata(metadata):
+    fortext = f"<meta name='description' content='{metadata}'>"
+    app(fileloc, fortext, False)
 
 # INIT
 def init(fileloc):
