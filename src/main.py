@@ -68,6 +68,9 @@ def input(placeholder, _id, cl, ot):
 def button(text, _id, cl, ot):
     fortext = f"<button id='{_id}' class='{cl}' {ot}>{text}</button>"
     app(fileloc, fortext, False)
+def link(text, href, _id, cl, ot):
+    fortext = f"<a href='{href}' id='{_id}' class='{cl}' {ot}>{text}</a>"
+    app(fileloc, fortext, False)
 
 # INIT
 def init(fileloc):
