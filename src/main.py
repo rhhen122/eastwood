@@ -51,6 +51,9 @@ def css(css):
 def favicon(filelocfavicon):
     fortext = f"<link rel='icon' type='image/x-icon' href='{filelocfavicon}'>"
     app(fileloc, fortext, False)
+def title(title):
+    fortext = f"<title>{title}</title>"
+    app(fileloc, fortext, False)
 
 # INIT
 def init(fileloc):
