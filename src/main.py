@@ -62,6 +62,12 @@ def ulist(_id, cl, ot):
     app(fileloc, fortext, False)
 def ulistclose():
     app(fileloc, "</ul>", False)
+def input(placeholder, _id, cl, ot):
+    fortext = f"<input placeholder='{placeholder}' id='{_id}' class='{cl}' {ot}>"
+    app(fileloc, fortext, False)
+def button(text, _id, cl, ot):
+    fortext = f"<button id='{_id}' class='{cl}' {ot}>{text}</button>"
+    app(fileloc, fortext, False)
 
 # INIT
 def init(fileloc):
