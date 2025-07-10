@@ -1,7 +1,7 @@
 from src.main import *
 from init import *
 
-init('index.html')
+init(fileloc)
 style('style.css')
 
 header('EASTWOOD - This is our amazing test!', '', '', '', '1')
@@ -15,4 +15,4 @@ What your looking at now is Code: EastWood static site generator built in Python
 raw('This is raw text!'); br()
 img('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s', '', '', '', '', '')
 
-end('index.html')
+end(fileloc)
