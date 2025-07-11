@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+body {
+    background-color: #222222;
+    color: white;
+
+    /* Font */
+    font-family: "Fira Mono";
+    font-weight: 400;
+    font-style: normal;
+}
+.head {
+    text-align: center;
+}
+hr {
+    opacity: 40%;
+    border: 5px solid #000000;
+}
+button {
+    background-color: #333333;
+    border-radius: 20px;
+    padding: 10px;
+    border: 0px;
+    color: white;
+    font-family: "Fira Mono";
+    font-weight: 400;
+    font-style: normal;
+}
